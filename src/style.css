@@ -1,0 +1,393 @@
+html, body {
+    
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+p{
+    font-family: 'Nunito', sans-serif;
+}
+  
+.container {
+    max-width: 100vw;
+    height: auto;
+   
+  }
+
+.content{
+    flex: 1;
+    margin:0px;
+    border:none ;
+}
+#menubar{
+    
+    position: absolute;
+    margin:40px 10px;
+     
+     
+}
+#menubar:hover + #main, #main:hover {
+    display: block;
+  }
+
+main{
+    display: none;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 45vh;
+    overflow-y: scroll;
+    background-color: #f1f1f1;
+    
+}
+main::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar */
+  }
+#myphoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: #ff6700;
+    padding: 10px;
+    height: 20vh;
+}
+#photo{
+    width:200px ;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid pink;
+}
+.myna{
+    text-align: center;
+    color: white;
+
+}
+nav{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+    padding: 30px;
+
+}
+nav li{
+    margin: 5px;
+}
+
+.tothe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color:#1d7874;
+    border:1px solid #335f5ffb;
+    padding: 10px;
+    width:150px;
+    height: 30px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+#sidefoot{
+    text-align: center;
+    height:50px;
+    background-color: #ff6700;
+    font-size: 20px;
+    padding: 30px;
+    font-weight: bolder;
+    color: white;
+}
+ul li , ol li  {
+    list-style: none;
+
+}
+
+
+#Home{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    
+    background-image: url("image/pexels-josh-sorenson-1714205.jpg");
+    background-size: cover;
+}
+
+
+
+#Home aside{
+    display: flex;
+    flex-flow: column wrap;
+}
+aside h1 {
+    font-size: 72px;
+    color: white;
+    
+}
+aside h1 span{
+    color: #ff6700;
+    
+}
+
+
+
+aside button{
+    font-size: 17px;
+    color:#ff6700;
+    padding: 15px 20px;
+    font-weight:bold;
+    margin:  10px;
+    border :none;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 2px;
+
+}
+aside div{
+    display: flex;
+    flex-flow: column  wrap;
+    justify-content: center;
+    align-self: center;
+
+
+}
+button{
+    background-color:#ff6700;
+}
+#About{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+#About img{
+    border-radius: 0px 0px 0px 25%;
+}
+#who{
+    width: 50%;
+}
+#who h1{
+      font-size: 30px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      color: #1b4332;
+
+}
+#who p{
+    font-size: 20px;
+    color:#1b4332;
+}
+#myname{
+    font-weight: bold;
+    padding: 0px 60px;
+}
+#my_skill{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+    font-style: italic;
+}
+#myname li div{
+    color: #ff6700;
+    font-weight: bold;
+    
+}
+#myname li{
+    font-size: 20px;
+}
+
+
+#Portfolio{
+    padding: 30px;
+    background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+    margin-bottom:20px ;
+}
+.sideside{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.portimg  {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 320px;
+    height: 240px;
+    background-size: cover; 
+    margin: 10px;
+
+
+}
+.portimg img video{
+    margin: 5px 5px;
+
+}
+.portvid{
+    display: flex;
+    flex-flow: column nowrap;
+     
+}
+#Portfolio h3{
+    color: #ff6700;
+}
+
+
+
+#Resume{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 30px;
+    align-items: center;
+    background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+}
+#Resume div h1{
+    font-size: 30px;
+    
+    font-weight: bolder;
+    color: #ff6700;
+   
+
+}
+#Resume p , #Resume h2,#Resume h3 ,#Resume h4{
+    color: white;
+}
+.deco{
+    border-top: 5px solid #ff6700;
+    border-left: 5px solid #ff6700;
+    border-top-left-radius: 15px;
+    padding: auto 0px;
+    font-weight: bolder;
+    color: white;
+    margin: 0px 5px 5px 5px;
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+.bord {
+    border:1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px 0px 10px 5px;
+    width:400px;
+    height: 210px;
+
+
+}
+#Skills{
+    background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+    
+}
+
+#Skills p{
+    color:white;
+    font-size: 10px;
+    
+}
+#Skills div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 30px;
+}
+#Skills audio{
+    margin-top: 50px;
+}
+#Contact{
+     background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+}
+#Contact section{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#Contact h1{
+    margin:30px;
+}
+#Contact label{
+    margin:5px 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#comment{
+    height: 80px;
+    width:300px;
+    border: none;
+    background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+    color:white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.input{
+       width:300px;
+       height:40px;
+       background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+       color:white;
+       font-size: 20px;
+       font-weight: bolder;
+       border: none;
+
+}
+#Contact button{
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #ff6700;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    display: inline;
+    text-align: center;
+
+}
+#Contact ul li{
+    display: flex;
+    flex-flow:column nowrap ;
+
+
+}
+#Contact ul span{
+    color: #ff6700;
+    font-size: 20px;
+    font-weight:bolder ;
+}
+#Contact ul p,#Contact ul a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight:bolder ;
+    text-decoration: none;
+}
+::placeholder {
+    color: white;
+}
+
+#text-filed{
+    margin: 10px;
+    background-color: #ff6700;
+    padding: 48px;
+    border-bottom-right-radius: 40%;
+}
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    padding: 30px;
+}
