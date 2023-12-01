@@ -1,96 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>My portfolio </title>
   
 </head>
 <body>
+    
     <header>
-    <main>
-        <img src="C:\Users\ASAA\OneDrive\Pictures\Camera imports\2023-10-04\39028.jpg">
-        <hgroup>
+    <i id="menubar"  class="fa-solid fa-bars fa-2xl" style="color: #ff6700;"></i>
+
+    <main id="main">
+        <div id="myphoto">
+        <img id="photo" src="image\39028.jpg">
+        <hgroup class="myna">
             <h2>Nardos Daniel</h2>
             <p>Full stack web developer and UiUX designer </p>
         </hgroup>
+        </div>
+
         <nav>
-            <manu>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Resume">Resume</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </manu>
+            <ul>
+                <li><a class="tothe" href="#Home"> <i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>    Home</a></li>
+                <li><a class="tothe" href="#About"><i class="fa-solid fa-address-card" style="color: #ffffff;"></i>      About</a></li>
+                <li><a class="tothe" href="#Portfolio"><i class="fa-regular fa-photo-film" style="color: #ffffff;"></i>  Portfolio</a></li>
+                <li><a class="tothe"href="#Resume"><i class="fa-solid fa-bars" style="color: #ffffff;"></i>              Resume</a></li>
+                <li><a class="tothe" href="#Skills"><i class="fa-regular fa-chart-column" style="color: #ffffff;"></i>   Skills</a></li>
+                <li><a class="tothe" href="#Contact"><i class="fa-regular fa-address-book" style="color: #ffffff;"></i>  Contact</a></li>
+            </ul>
         </nav>
+        <div id="sidefoot">
+            <p>Copyright @ 2023</p>
+        </div>
     </main>
-    <div id="aside-bottom">
-        <p>Copyright 2023</p>
-    </div>
+    
     </header>
     
-    <div id="Home">
-        <aside>
+    <div class="content container" id="Home" >
+        <aside >
+           
             <h1>Hi!</h1>
-            <h1>I am a <u>designer</u></h1>
-            <button>Downlode CV</button>
-            <button>Hire Me</button>
+            <h1>I am a <span><u>designer</u></span></h1>
+            <div>
+                <button>Downlode CV</button>
+                <button>Hire Me</button>
+            </div>
         </aside>
     </div>
-    <hr>
-    <div id="About">
-        <h1>WHO I AM</h1>
-        <section>
+    
+    
+    <div id="About" class="content container"  >
+        
+        <section id="who">
+            <h1>WHO I AM</h1>
             <p>I am a professional web developer for the last 2 years. I worked with more than 5 different organization.
                  I have completed my graduation Software Engineering.</p>
-            <p id="my skill">WordPress, HTML, CSS, SCSS, PHP, JS, React, 
+            <p id="my_skill">WordPress, HTML, CSS, SCSS, PHP, JS, React, 
                 Vue are the main language and cms which I used to develop website.</p>
             <p>It was my responsibility to manage the design and development of all 
                 aspects of the company’s IT systems.
                  This included managing the overall operation of 
                  the IT systems and software.</p>
-            <ul>
-                <li><div>Name:</div>Nardos Daniel</li>
-                <li><div>Birthday:</div>3 may 2003</li>
-                <li><div>Country:</div>Ethiopia</li>
-                <li><div>Experience:</div>2+</li>
-                <li><div>Freelance:</div>Available</li>
-
-            </ul>
-        </section>
-        
-    </div>
-    <div id="Portfolio">
-        <h1>MY PROJECTS</h1>
-        <img src="C:\Users\ASAA\Downloads\Web Design Trends Predictions 2021.jpg" width="320" height="240">
-        <img src="C:\Users\ASAA\OneDrive\Pictures\download.jpg"width="320" height="240">
-        <video width="320" height="240" controls>
-            <source src="https://www.youtube.com/watch?v=CQZxeoQeo5c&pp=ygUqZXhhbXBsZSB3ZWJzaXRlIGRlc2lnbiB1c2luZyBodG1sIGFuZCBjc3Mg" type="video/mp4">
             
-            Your browser does not support the video tag.
-          </video>
-         
-        <video width="320" height="240" controls>
-            <source src="https://www.youtube.com/watch?v=PgAZ8KzfhO8&pp=ygUqZXhhbXBsZSB3ZWJzaXRlIGRlc2lnbiB1c2luZyBodG1sIGFuZCBjc3Mg" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        </section>
+        <ul id="myname">
+            <li><div>Name:</div>Nardos Daniel</li>
+            <li><div>Birthday:</div>3 may 2003</li>
+            <li><div>Country:</div>Ethiopia</li>
+            <li><div>Experience:</div>2+</li>
+            <li><div>Freelance:</div>Available</li>
+
+        </ul>
+        <img class="portimg" src="image\pexels-josh-sorenson-1714205.jpg">
+    </div>
+    <div id="Portfolio" class="content container" >
+        <h1 class="myna deco">MY PROJECTS</h1>
+        <div class="sideside">
+        <div class="portimg">
+            <img class="bord" src="C:\Users\ASAA\OneDrive\Desktop\my new pro\image\download.jpg" >
+            <img  class="bord" src="C:\Users\ASAA\OneDrive\Desktop\my new pro\image\download.jpg">
+        </div>
+        <div class="portvid">
+            <video  class="bord" width="320" height="240" controls>
+                <source src="C:\Users\ASAA\OneDrive\Desktop\my new pro\image\pexels-otavio-henrique-17954856 (2160p).mp4" type="video/mp4">
+                
+                Your browser does not support the video tag.
+            </video>
+            
+            <video class="bord" width="320" height="240" controls>
+                <source src="C:\Users\ASAA\OneDrive\Desktop\my new pro\image\pexels-karyna-videobrand-19075018 (Original).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
         
-        <h3>VIEW MORE</h3>
+        <h3 class="myna">VIEW MORE</h3>
 
     </div>
     
-    <div id="Resume">
+    <div id="Resume" class="content container">
         <section>
-        <h1>EXPERIENCE</h1>
-        <div id="uiux">
-            <h2>Web Developer</h2>
+        <h1 class="myna deco">EXPERIENCE</h1>
+        <div id="web" class="bord">
+            <h1>Web Developer</h1>
             <h4>2020-Running</h4>
             <p>ThemeMount
                 Proficient in HTML, CSS, JavaScript, PHP. 
                 Experience in popular cms such as WordPress, 
                 Joomla, and Drupal</p>
             </div>
-        <div id="Team-Leader">
+        <div id="Team-Leader" class="bord">
             <h1>Team Leader </h1>
             <h4>2020-Running</h4>
             <p>CodePedant
@@ -99,48 +123,68 @@
             </div>
         </section>
         <section>
-            <h1>EDUCATION</h1>
-            <div id="Certeficet">
+            <h1 class="myna deco">EDUCATION</h1>
+    
+            <div id="Certeficet" class="bord">
                 <h1>Diploma in Marketing</h1>
+                <h4>2020-Running</h4>
                 <h2>Hawassa University</h2>
                 <p>Hawassa university is well known university 
                     in digital Marketing located in Ethiopia</p>
                 
             </div>
-            <div id="Degree">
+            <div id="Degree" class="bord">
                 <h1>Degree</h1>
-                <h2>Addis Abeba University </h2>
+                <h4>2020-Running</h4>
+                <h3>Addis Abeba University </h3>
                 <p>
-                    The University of Addis Abeba is known for excellence,
+                    Addis Abeba is known for excellence,
                      innovative teaching methods, and strong industry connections. </p>
             </div>
 
         </section>
     </div>
-    <div id="Skills">
-       <h2> I do with passion...</h2>
+    <div id="Skills" class="content container">
+       <div>
+        <h2 class="deco"> I do with passion...</h2>
         <p>Different web development technologies can offer different benefits and limitations, 
         so it's important to choose a technology that aligns with your project goals and requirements.
 
         Common web development technologies include
          HTML, CSS, JavaScript, PHP, Python, Ruby on Rails, and many more.</p>
+         </div>
+         <div>
+            <h2 class="deco">TESTIMONY</h2>
+         <audio controls>
+            
+            <source src="image\glossy-168156.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+         </div>
 
 
     </div>
-    <div id="Contact">
+    <div id="Contact" class="content container">
+        <h1 class="deco">CONTACT ME</h1>
         <section>
+            
         <div id="text-filed">
-            <h1>CONTACT ME</h1>
+            
             <form action="/action_page.php">
                 <label>First name:</label><br>
-                <input type="text" placeholder="Name"><br>
+                <input  class="input" type="text" placeholder="Name"><br>
                 <label >Last name:</label><br>
-                <input type="text" placeholder="Name"><br>
+                <input class="input" type="text" placeholder="Name"><br>
                 <label >Email:</label><br>
-                <input type="text" placeholder="Email"><br>
+                <input class="input" width:300px;
+                height:40px;
+                background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
+                color:white;
+                font-size: 20px;
+                font-weight: bolder;type="text" placeholder="Email"><br>
                 <label >Comments:</label><br>
-                <input type="text" placeholder="Comments" id="comment">
-                <button>Submit</button>
+                <input type="text" placeholder="Comments" id="comment"><br>
+                <button>Submit  <i class="fa-sharp fa-regular fa-paper-plane-top" style="color: #ff9633;"></i></button>
               </form> 
               
             
@@ -148,23 +192,23 @@
         
             <ul>
                 <li><span>Location:</span>
-                Addis Abeba Ethiopia</li>
+                <p>Addis Abeba Ethiopia</p></li>
                 <li><span>E-mail:</span>
                 <a href="nardoschachidaniel@gmail.com">"nardoschachidaniel@gmail.com"</a>   </li>
                 <li><span>Phone:</span>
-                    +251938903153</li>
+                    <p>+251938903153</p></li>
                
             </ul>
         
         </section>
 
     </div>
-    <footer>
-        <a href="https://www.facebook.com/nardos.daniel.9465"><svg viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Facebook-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-200.000000, -160.000000)" fill="#4460A0"> <path d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z" id="Facebook"> </path> </g> </g> </g></svg>></i></a>
-        <a href="https://instagram.com/nardosdaniel__/"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect> <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"></path> <defs> <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"> <stop stop-color="#B13589"></stop> <stop offset="0.79309" stop-color="#C62F94"></stop> <stop offset="1" stop-color="#8A3AC8"></stop> </radialGradient> <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"> <stop stop-color="#E0E8B7"></stop> <stop offset="0.444662" stop-color="#FB8A2E"></stop> <stop offset="0.71474" stop-color="#E2425C"></stop> <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop> </radialGradient> <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"> <stop offset="0.156701" stop-color="#406ADC"></stop> <stop offset="0.467799" stop-color="#6A45BE"></stop> <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop> </radialGradient> </defs> </g></svg></a>
-        <a href="https://github.com/chachidani"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g></svg></a>
-        <a href="https://t.me/Chachi_Dani"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7225)"></circle> <path d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7225" x1="16" y1="2" x2="16" y2="30" gradientUnits="userSpaceOnUse"> <stop stop-color="#37BBFE"></stop> <stop offset="1" stop-color="#007DBB"></stop> </linearGradient> </defs> </g></svg></a>
-        <a href="https://www.linkedin.com/in/nardos-daniel-8a284728a/"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g></svg></a>
+    <footer class="content">
+        <a href="https://www.facebook.com/nardos.daniel.9465"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://instagram.com/nardosdaniel__/"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://github.com/chachidani"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://t.me/Chachi_Dani"><i class="fa-brands fa-telegram fa-2xl" style="color: #ffffff;"></i></a>
+        <a href="https://www.linkedin.com/in/nardos-daniel-8a284728a/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
     </footer>
    
     
