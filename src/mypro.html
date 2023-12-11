@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="res.css">
   <meta charset="UTF-8">
   <title>My portfolio </title>
   
@@ -13,12 +14,12 @@
 <body>
     
     <header>
-    <i id="menubar"  class="fa-solid fa-bars fa-2xl" style="color: #ff6700;"></i>
+    <i id="header__menubar"  class="fa-solid fa-bars fa-2xl" style="color: #ff6700;"></i>
 
-    <main id="main">
-        <div id="myphoto">
-        <img id="photo" src="image\39028.jpg">
-        <hgroup class="myna">
+    <main id="header__main">
+        <div id="header__myphoto">
+        <img id="header__photo" src="image\39028.jpg">
+        <hgroup class="header__myna ">
             <h2>Nardos Daniel</h2>
             <p>Full stack web developer and UiUX designer </p>
         </hgroup>
@@ -26,15 +27,15 @@
 
         <nav>
             <ul>
-                <li><a class="tothe" href="#Home"> <i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>    Home</a></li>
-                <li><a class="tothe" href="#About"><i class="fa-solid fa-address-card" style="color: #ffffff;"></i>      About</a></li>
-                <li><a class="tothe" href="#Portfolio"><i class="fa-regular fa-photo-film" style="color: #ffffff;"></i>  Portfolio</a></li>
-                <li><a class="tothe"href="#Resume"><i class="fa-solid fa-bars" style="color: #ffffff;"></i>              Resume</a></li>
-                <li><a class="tothe" href="#Skills"><i class="fa-regular fa-chart-column" style="color: #ffffff;"></i>   Skills</a></li>
-                <li><a class="tothe" href="#Contact"><i class="fa-regular fa-address-book" style="color: #ffffff;"></i>  Contact</a></li>
+                <li><a class="header__link" href="#Home"> <i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>    Home</a></li>
+                <li><a class="header__link" href="#About"><i class="fa-solid fa-address-card" style="color: #ffffff;"></i>      About</a></li>
+                <li><a class="header__link" href="#Portfolio"><i class="fa-regular fa-photo-film" style="color: #ffffff;"></i>  Portfolio</a></li>
+                <li><a class="header__link"href="#Resume"><i class="fa-solid fa-bars" style="color: #ffffff;"></i>              Resume</a></li>
+                <li><a class="header__link" href="#Skills"><i class="fa-regular fa-chart-column" style="color: #ffffff;"></i>   Skills</a></li>
+                <li><a class="header__link" href="#Contact"><i class="fa-regular fa-address-book" style="color: #ffffff;"></i>  Contact</a></li>
             </ul>
         </nav>
-        <div id="sidefoot">
+        <div id="header__sidefoot">
             <p>Copyright @ 2023</p>
         </div>
     </main>
@@ -56,11 +57,11 @@
     
     <div id="About" class="content container"  >
         
-        <section id="who">
+        <section id="about__who">
             <h1>WHO I AM</h1>
             <p>I am a professional web developer for the last 2 years. I worked with more than 5 different organization.
                  I have completed my graduation Software Engineering.</p>
-            <p id="my_skill">WordPress, HTML, CSS, SCSS, PHP, JS, React, 
+            <p id="about-my-skill">WordPress, HTML, CSS, SCSS, PHP, JS, React, 
                 Vue are the main language and cms which I used to develop website.</p>
             <p>It was my responsibility to manage the design and development of all 
                 aspects of the company’s IT systems.
@@ -68,7 +69,7 @@
                  the IT systems and software.</p>
             
         </section>
-        <ul id="myname">
+        <ul id="about__myname">
             <li><div>Name:</div>Nardos Daniel</li>
             <li><div>Birthday:</div>3 may 2003</li>
             <li><div>Country:</div>Ethiopia</li>
@@ -76,37 +77,37 @@
             <li><div>Freelance:</div>Available</li>
 
         </ul>
-        <img class="portimg" src="image\pexels-josh-sorenson-1714205.jpg">
+        <img class="portfolio__image" src="image\pexels-josh-sorenson-1714205.jpg">
     </div>
     <div id="Portfolio" class="content container" >
         <h1 class="myna deco">MY PROJECTS</h1>
-        <div class="sideside">
-        <div class="portimg">
+        <div class="portfolio_sideside">
+        <div class="portfolio__image">
             <img class="bord" src="image\download.jpg" >
-            <img  class="bord" src="image\download.jpg">
+            <img  class="bord" src="image\download.jpg" >
         </div>
-        <div class="portvid">
-            <video  class="bord" width="320" height="240" controls>
+        <div class="portfolio__video">
+            <video  class="bord"  controls>
                 <source src="image\pexels-otavio-henrique-17954856 (2160p).mp4" type="video/mp4">
                 
                 Your browser does not support the video tag.
             </video>
             
-            <video class="bord" width="320" height="240" controls>
+            <video class="bord"  controls>
                 <source src="image\pexels-karyna-videobrand-19075018 (Original).mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         </div>
         
-        <h3 class="myna">VIEW MORE</h3>
+        <h3 class="header__myna">VIEW MORE</h3>
 
     </div>
     
     <div id="Resume" class="content container">
         <section>
-        <h1 class="myna deco">EXPERIENCE</h1>
-        <div id="web" class="bord">
+        <h1 class="header__myna deco">EXPERIENCE</h1>
+        <div id="resume_web" class="bord">
             <h1>Web Developer</h1>
             <h4>2020-Running</h4>
             <p>ThemeMount
@@ -114,7 +115,7 @@
                 Experience in popular cms such as WordPress, 
                 Joomla, and Drupal</p>
             </div>
-        <div id="Team-Leader" class="bord">
+        <div id="resume_Team-Leader" class="bord">
             <h1>Team Leader </h1>
             <h4>2020-Running</h4>
             <p>CodePedant
@@ -123,9 +124,9 @@
             </div>
         </section>
         <section>
-            <h1 class="myna deco">EDUCATION</h1>
+            <h1 class="header__myna deco">EDUCATION</h1>
     
-            <div id="Certeficet" class="bord">
+            <div id="resume_Certeficet" class="bord">
                 <h1>Diploma in Marketing</h1>
                 <h4>2020-Running</h4>
                 <h2>Hawassa University</h2>
@@ -133,7 +134,7 @@
                     in digital Marketing located in Ethiopia</p>
                 
             </div>
-            <div id="Degree" class="bord">
+            <div id="resume_Degree" class="bord">
                 <h1>Degree</h1>
                 <h4>2020-Running</h4>
                 <h3>Addis Abeba University </h3>
@@ -168,22 +169,22 @@
         <h1 class="deco">CONTACT ME</h1>
         <section>
             
-        <div id="text-filed">
+        <div id="contact_text-filed">
             
             <form action="/action_page.php">
                 <label>First name:</label><br>
-                <input  class="input" type="text" placeholder="Name"><br>
+                <input  class="contact_input" type="text" placeholder="Name"><br>
                 <label >Last name:</label><br>
-                <input class="input" type="text" placeholder="Name"><br>
+                <input class="contact_input" type="text" placeholder="Name"><br>
                 <label >Email:</label><br>
-                <input class="input" width:300px;
+                <input class="contact_input" width:300px;
                 height:40px;
                 background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
                 color:white;
                 font-size: 20px;
                 font-weight: bolder;type="text" placeholder="Email"><br>
                 <label >Comments:</label><br>
-                <input type="text" placeholder="Comments" id="comment"><br>
+                <input type="text" placeholder="Comments" id="contact_comment"><br>
                 <button>Submit  <i class="fa-sharp fa-regular fa-paper-plane-top" style="color: #ff9633;"></i></button>
               </form> 
               
