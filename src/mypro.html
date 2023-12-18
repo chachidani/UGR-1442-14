@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="res.css">
+  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>My portfolio </title>
   
@@ -46,10 +46,10 @@
         <aside >
            
             <h1>Hi!</h1>
-            <h1>I am a <span><u>designer</u></span></h1>
+            <h1 class="home_me">I am a <span id="home_me_about" ><u> web developer</u></span></h1>
             <div>
-                <button>Downlode CV</button>
-                <button>Hire Me</button>
+                <button id="home_button1">Downlode CV</button>
+                <button id="home_button2">Hire Me</button>
             </div>
         </aside>
     </div>
@@ -68,6 +68,7 @@
                  This included managing the overall operation of 
                  the IT systems and software.</p>
             
+                 
         </section>
         <ul id="about__myname">
             <li><div>Name:</div>Nardos Daniel</li>
@@ -171,21 +172,16 @@
             
         <div id="contact_text-filed">
             
-            <form action="/action_page.php">
-                <label>First name:</label><br>
-                <input  class="contact_input" type="text" placeholder="Name"><br>
-                <label >Last name:</label><br>
-                <input class="contact_input" type="text" placeholder="Name"><br>
-                <label >Email:</label><br>
-                <input class="contact_input" width:300px;
-                height:40px;
-                background-image: linear-gradient( #1b4332 ,#1d7874, #1b4332);
-                color:white;
-                font-size: 20px;
-                font-weight: bolder;type="text" placeholder="Email"><br>
-                <label >Comments:</label><br>
-                <input type="text" placeholder="Comments" id="contact_comment"><br>
-                <button>Submit  <i class="fa-sharp fa-regular fa-paper-plane-top" style="color: #ff9633;"></i></button>
+            <form id="contactForm">
+                <label for="fnameInput">First name:</label><br>
+                <input  class="contact_input" id="fnameInput" name="First_Name"  type="text" placeholder="Name" required ><br>
+                <label for="lnameInput" >Last name:</label><br>
+                <input class="contact_input" id="lnameInput" name="Last_Name" type="text" placeholder="Name" required><br>
+                <label for="email">Email:</label><br>
+                <input id="email" class="contact_input" type="text" name="Email" placeholder="Email" required><br>
+                <label for="contact_comment">Comments:</label><br>
+                <input type="text" placeholder="Comments" id="contact_comment" name="Comment"><br>
+                <button id="submit" >Submit  <i class="fa-sharp fa-regular fa-paper-plane-top" style="color: #ff9633;"></i></button>
               </form> 
               
             
@@ -213,6 +209,7 @@
     </footer>
    
     
+    <script src="js/res.js" ></script>
   
 </body>
 </html>
