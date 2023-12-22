@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css" >
+
+    <title>Document</title>
+</head>
+<body>
+    <header id="sidebar" class=" overflow-y-auto max-h-[800px] h-screen fixed t-0 lg:max-w-80   bg-slate-600  hidden lg:block " >
+        <div class="border-b shadow-md border-black flex flex-col justify-center m-3 ">
+            <figure class=" flex justify-center m-4">
+                <img id="header__photo" class="w-40 h-52 rounded-full" src="image\39028.jpg"/>
+            </figure>
+            <figure-caption class="m-1"> 
+                <h2 class="text-xl text-center text-white font-bold font-sans">Nardos Daniel</h2>
+                <p class="text-sm text-center text-white">Full stack web developer and UiUX designer </p>
+            </figure-caption>
+        </div>
+        <div>
+             <nav class="">
+                        <ul class="flex flex-col items-center">
+                            <li class="border-yellow-700 shadow-md bg-yellow-600 p-3 w-36 m-3 rounded-md"><a  href="#Home" class="text-white font-bold"> <i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>    Home</a></li>
+                            <li class="border-yellow-700 shadow-md bg-yellow-600 p-3 w-36 m-3 rounded-md" ><a  href="#About" class="text-white font-bold"><i class="fa-solid fa-address-card" style="color: #ffffff;"></i>      About</a></li>
+                            <li class="border-yellow-700 shadow-md bg-yellow-600 p-3 w-36 m-3 rounded-md" ><a  href="#Portfolio" class="text-white font-bold"><i class="fa-regular fa-photo-film" style="color: #ffffff;"></i>  Portfolio</a></li>
+                            <li class="border-yellow-700 shadow-md bg-yellow-600 p-3 w-36 m-3 rounded-md"><a href="#Resume" class="text-white font-bold"><i class="fa-solid fa-bars" style="color: #ffffff;"></i>              Resume</a></li>
+                            <li  class="border-yellow-700 shadow-md bg-yellow-600 p-3 w-36 m-3 rounded-md"><a href="#Skills" class="text-white font-bold"><i class="fa-regular fa-chart-column" style="color: #ffffff;"></i>   Skills</a></li>
+                            <li  class="border-yellow-700 shadow-md bg-yellow-600 p-3 w-36 m-3 rounded-md"><a  href="#Contact" class="text-white font-bold"><i class="fa-regular fa-address-book" style="color: #ffffff;"></i>  Contact</a></li>
+                        </ul>
+                    </nav>
+        </div>
+        <div class="bg-yellow-900 shadow-md">
+            <div class="text-center p-10">
+                <p class="text-lg font-bold font-mono">
+                    Copyright @ 2023
+                </p>
+            </div>
+        </div>
+    </header>
+    <main id="Home" class="lg:ml-80 h-screen  bg-cover bg-center  bg-slate-300 " style="background-image: url('dist\image\pexels-josh-sorenson-1714205.jpg');">
+        <div class="md:hidden lg:hidden sm:block">
+            <span>
+                <i id="header__menubar"   style="color: #ff6700;"></i> 
+            </span>
+        </div>
+        <div class="flex flex-col ml-10  justify-center pt-40">
+        <div>
+            <h1 class="text-5xl font-sans font-bold m-3">Hi!</h1>
+            <h1 class="text-5xl font-sans font-bold m-3">I am a <span id="home_me_about"><u>designer</u></span></h1>
+        </div>
+        <div class="mt-5 ">
+            <button id="home_button1" class="rounded-lg uppercase cursor-pointer bg-yellow-600 text-white font-bold py-3 px-4 tracking-wider ml-5 ">Downlode CV</button>
+            <button id="home_button2" class="rounded-lg uppercase cursor-pointer  bg-yellow-600 text-white font-bold py-3 px-4 tracking-wider">Hire Me</button>
+        </div>
+        </div>
+        </div>
+
+    </main>
+    <section id="About" class="lg:ml-80 bg-slate-300 lg:h-screen grid grid-cols-4 items-center sm:grid-row">
+        <div class="col-span-2 p-5">
+            <div class="text-center"><h1 class="font-sans font-bold text-2xl ">WHO I AM</h1></div>
+            <div class="text-center">
+                <p class="font-sans text-lg">I am a professional web developer for the last 2 years. I worked with more than 5 different organization.
+                    I have completed my graduation Software Engineering.</p>
+                        <p id="about-my-skill" class="font-mono font-semibold text-lg">WordPress, HTML, CSS, SCSS, PHP, JS, React, 
+                    Vue are the main language and cms which I used to develop website.</p>
+                        <p class="font-sans text-lg">It was my responsibility to manage the design and development of all 
+                    aspects of the company’s IT systems.
+                    This included managing the overall operation of 
+                    the IT systems and software.</p>
+            </div>
+        </div>
+        <div class="col-span-1">
+            <ul id="about__myname" >
+                <li><div><strong class="text-yellow-900 font-bold"> Name:</strong></div>Nardos Daniel</li>
+                <li><div><strong class="text-yellow-900 font-bold"> Birthday:</strong></div>3 may 2003</li>
+                <li><div><strong class="text-yellow-900 font-bold"> Country:</strong></div>Ethiopia</li>
+                <li><div><strong class="text-yellow-900 font-bold"> Experience:</strong></div>2+</li>
+                <li><div><strong class="text-yellow-900 font-bold"> Freelance:</strong></div>Available</li>
+    
+            </ul>
+        </div>
+        <div class="col-span-1 flex p-2">
+            <figure>
+                <img class="w-80 rounded-bl-3xl" src="image\pexels-josh-sorenson-1714205.jpg">
+            </figure>
+        </div>
+    </section>
+    <section id="Portfolio" class="lg:ml-80 lg:h-screen bg-slate-300 shadow">
+        <div class="text-center mb-14">
+            <h1 class="font-bold text-3xl  text-white ">MY PROJECTS</h1>
+        </div>
+        <div class="flex flex-col items-center">
+        <div class="flex ">
+            <div class="bg-white shadow-md m-2 ">
+                <figure class="p-2">
+                    <img class="w-80" src="image\download.jpg" >
+                </figure>
+            </div>
+            <div  class="bg-white shadow-md m-2">
+                <figure class="p-2">
+                    <img class="w-80" src="image\download.jpg" >
+                </figure>
+            </div>
+        </div>
+        <div class="flex">
+            <div  class="bg-white shadow-md m-2">
+                <video class="w-80 p-2" controls>
+                    <source src="image\pexels-otavio-henrique-17954856 (2160p).mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div  class="bg-white shadow-md m-2">
+                <video class="w-80 p-2" controls>
+                    <source src="image\pexels-otavio-henrique-17954856 (2160p).mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        </div>
+
+        <div class="border flex flex-col  items-center w-40 text-center rounded-lg uppercase cursor-pointer  bg-yellow-600 text-white font-bold py-3 px-4 tracking-wider ml-5 ">
+            <h3><a>VIEW MORE</a></h3>
+        </div>
+
+    </section>
+    <section id="Resume" class="lg:ml-80 lg:h-screen bg-slate-300 shadow flex lg:flex-row  flex-col items-center">
+        <div class=" bg-slate-200  m-5 p-5">
+            <div class="text-center mb-10">
+                <h1 class="text-2xl font-sans font-bold">EXPERIENCE</h1>
+            </div>
+            <div class="flex flex-col bg-slate-400  justify-between p-10">
+                <div class="shadow p-2 m-3">
+                    <h1 class="text-xl font-sans font-bold">Web Developer</h1>
+                    <h4>2020-Running</h4>
+                    <p>ThemeMount
+                        Proficient in HTML, CSS, JavaScript, PHP. 
+                        Experience in popular cms such as WordPress, 
+                        Joomla, and Drupal</p>
+                </div>
+                <div class="shadow p-2 m-3 ">
+                    <h1 class="text-xl font-sans font-bold">Team Leader </h1>
+                    <h4>2020-Running</h4>
+                    <p>CodePedant
+                        Worked with cross-functional
+                        teams to ensure projects were delivered on time and within budget</p>
+                </div>
+            </div>
+        </div>
+        <div class=" bg-slate-200  m-5 p-5">
+            <div class="text-center mb-10">
+                <h1 class="text-2xl font-sans font-bold">EDUCATION</h1>
+            </div>
+            <div class="flex flex-col bg-slate-400  justify-between p-10">
+                <div class="shadow p-2 m-3">
+                    <h1 class="text-xl font-sans font-bold">Diploma in Marketing</h1>
+                    <h4>2020-Running</h4>
+                    <h2>Hawassa University</h2>
+                    <p>Hawassa university is well known university 
+                        in digital Marketing located in Ethiopia</p>
+                </div>
+                <div class="shadow p-2 m-3 ">
+                    <h1 class="text-xl font-sans font-bold">Degree </h1>
+                    <h4>2020-Running</h4>
+                    <h3>Addis Abeba University </h3>
+                    <p>CodePedant
+                        Worked with cross-functional
+                        teams to ensure projects were delivered on time and within budget</p>
+                </div>
+            </div>
+        </div>
+       
+
+    </section>
+    <section id="Skills" class="lg:ml-80 lg:h-screen bg-slate-300 shadow flex flex-col">
+        <div class="m-10">
+            <div class="text-center">
+                <h1 class="font-bold text-2xl">
+                    I do with passion...
+                </h1>
+            </div>
+            <div>
+                <p class="font-sans text-xl">Different web development technologies can offer different benefits and limitations, 
+                    so it's important to choose a technology that aligns with your project goals and requirements.
+            
+                    Common web development technologies include
+                     HTML, CSS, JavaScript, PHP, Python, Ruby on Rails, and many more.</p>
+            </div>
+        </div>
+        <div class="p-10">
+            <audio controls>
+                            
+                <source src="image\glossy-168156.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </div>
+
+    </section>
+    <section id="Contact" class="lg:ml-80 lg:h-screen bg-slate-300 shadow flex flex-col ">
+        <div  class="text-center">
+            <h1 class="font-bold text-2xl">CONTACT ME</h1>
+        </div>
+        <div class="flex lg:flex-row m-10 justify-around">
+        <div class="bg-slate-500 shadow-lg p-16 rounded-lg">
+            <form id="contactForm">
+                <label for="fnameInput">First name:</label><br>
+                <div ><input  id="fnameInput" name="First_Name"  type="text" placeholder="Name" required ></div><br>
+                <label  for="lnameInput" >Last name:</label><br>
+                <div ><input id="lnameInput" name="Last_Name" type="text" placeholder="Name" required></div><br>
+                <label for="email">Email:</label><br>
+                <div><input id="email"  type="text" name="Email" placeholder="Email" required></div><br>
+                <label  for="contact_comment">Comments:</label><br>
+                <textarea class="h-20" placeholder="Comments" id="contact_comment" name="Comment"></textarea><br>
+                <button class="rounded-lg uppercase cursor-pointer  bg-yellow-600 text-white font-bold py-2 px-3 tracking-wider ml-5 " id="submit" >Submit  <i class="fa-sharp fa-regular fa-paper-plane-top" style="color: #ff9633;"></i></button>
+              </form>
+        </div>
+        <div>
+            <ul class="mt-20">
+                <li><span><strong class="font-bold text-yellow-900"> Location:</strong></span>
+                <p>Addis Abeba Ethiopia</p></li>
+                <li><span><strong class="font-bold text-yellow-900"> E-mail:</strong></span>
+                <a href="nardoschachidaniel@gmail.com">"nardoschachidaniel@gmail.com"</a>   </li>
+                <li><span><span><strong class="font-bold text-yellow-900"> Phone:</strong></span>
+                    <p>+251938903153</p></li>
+               
+            </ul>
+        </div>
+        </div>
+    </section>
+    <footer class="lg:ml-80 bg-black shadow flex flex-col p-10">
+        <div class="flex justify-around">
+            <a href="https://www.facebook.com/nardos.daniel.9465"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="https://instagram.com/nardosdaniel__/"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="https://github.com/chachidani"><i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="https://t.me/Chachi_Dani"><i class="fa-brands fa-telegram fa-2xl" style="color: #ffffff;"></i></a>
+                <a href="https://www.linkedin.com/in/nardos-daniel-8a284728a/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
